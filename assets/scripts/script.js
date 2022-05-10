@@ -2,10 +2,17 @@ $(function () {
   $('#myModal').modal('show')
 })
 
+function addZero(i) {
+  if (i < 10) {
+    i = '0' + i
+  }
+  return i
+}
+
 $(function () {
   let d1 = new Date()
   let h = d1.getHours()
-  let m = d1.getMinutes()
+  let m = addZero(d1.getMinutes())
   document.getElementById('rlg').innerHTML = h + ':' + m
 })
 
