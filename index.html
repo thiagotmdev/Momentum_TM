@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio HTML & CSS</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Informe seu nome abaixo</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <label for="">Nome: </label>
+        <input type="text" id="nomeInput">
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success"  id="close" onclick="close()">Enviar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <div class="main">
+      <div class="relogio" id="rlg">00:00</div>
+
+      <div class="nomeID" id="nomeID"></div>
+    </div>
+    <div class="frase">
+      <ul>
+        <li>
+          "A felicidade não é um ponto de chegada e sim uma eterna jornada."
+          <p>Autor: Valéria Batista</p>
+        </li>
+      </ul>
+    </div>
+    <script src="./assets/scripts/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./assets/scripts/script.js"></script>
+    <script src="./assets/scripts/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
