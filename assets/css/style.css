@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   font-family: helvetica;
   min-height: 100vh;
+  justify-content: space-between;
 }
 
 .main {
